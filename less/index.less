@@ -55,6 +55,7 @@ table {
 
 html, body {
     height: 100%;
+    font-family: 'Roboto', 'sans-serif'
 }
 
 .container{
@@ -90,5 +91,67 @@ header{
         font-size:120%;
         line-height:1.2;
         padding: 2% 0;
+    }
+}//Close header
+
+#about{
+    padding:3% 0;
+    display:flex;
+    justify-content:space-between;
+
+    h2{
+        font-size:200%;
+        padding-bottom:2%;
+    }
+    p {
+        line-height:1.3;
+    }
+    div{
+        width:47%;
+    }
+    ul {
+        border:1px solid black;
+        border-radius:4px;
+
+        li{
+            padding:3%;
+            border-bottom:1px solid black
+        }
+        li:last-child{
+            border-bottom:none;
+        }
+    }
+}//Close about
+
+#portfolio{
+    padding:5% 0;
+    text-align:center;
+    h2{
+        font-size: 200%;
+    }
+    p{
+        padding:2%;
+    }
+}//Close portfolio
+
+#contact{
+    padding:5%;
+    .name-email{
+        display:flex;
+        justify-content:space-between;
+        padding: 2% 0;
+        div{
+            width: 48%;
+        }
+    }
+    h2{
+        font-size:200%;
+    }
+    input[type=text] {
+        width: 80%;
+        padding-right:3%;
+    }
+    textarea{
+        height:200px;
     }
 }

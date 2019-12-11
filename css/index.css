@@ -133,6 +133,7 @@ table {
 html,
 body {
   height: 100%;
+  font-family: 'Roboto', 'sans-serif';
 }
 .container {
   width: 800px;
@@ -163,4 +164,61 @@ header p {
   font-size: 120%;
   line-height: 1.2;
   padding: 2% 0;
+}
+#about {
+  padding: 3% 0;
+  display: flex;
+  justify-content: space-between;
+}
+#about h2 {
+  font-size: 200%;
+  padding-bottom: 2%;
+}
+#about p {
+  line-height: 1.3;
+}
+#about div {
+  width: 47%;
+}
+#about ul {
+  border: 1px solid black;
+  border-radius: 4px;
+}
+#about ul li {
+  padding: 3%;
+  border-bottom: 1px solid black;
+}
+#about ul li:last-child {
+  border-bottom: none;
+}
+#portfolio {
+  padding: 5% 0;
+  text-align: center;
+}
+#portfolio h2 {
+  font-size: 200%;
+}
+#portfolio p {
+  padding: 2%;
+}
+#contact {
+  padding: 5%;
+}
+#contact .name-email {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+#contact .name-email div {
+  width: 48%;
+}
+#contact h2 {
+  font-size: 200%;
+}
+#contact input[type=text] {
+  width: 80%;
+  padding-right: 3%;
+}
+#contact textarea {
+  height: 200px;
 }
