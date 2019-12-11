@@ -56,3 +56,39 @@ table {
 html, body {
     height: 100%;
 }
+
+.container{
+    width:800px;
+    margin:0 auto;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row-reverse;
+    padding:2% 0;
+
+    a{
+        text-decoration:none;
+        color:black;
+    }
+}//Close nav
+
+@header-bg:#e7e7e7;
+
+header{
+    background-color:@header-bg;
+    border-radius:8px;
+    padding:5% 2%;
+    img{
+        width: 35%;
+    }
+    h1{
+        font-size:300%;
+    }
+    p{
+        font-size:120%;
+        line-height:1.2;
+        padding: 2% 0;
+    }
+}
