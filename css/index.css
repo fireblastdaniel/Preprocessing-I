@@ -147,12 +147,14 @@ button {
   margin: 0 auto;
 }
 nav {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
+  text-align: right;
   padding: 2% 0;
 }
+nav div {
+  max-width: 100%;
+}
 nav a {
+  padding-left: 2%;
   text-decoration: none;
   color: black;
 }
