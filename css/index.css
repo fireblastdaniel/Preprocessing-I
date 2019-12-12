@@ -143,8 +143,13 @@ button {
   border-radius: 8px;
 }
 .container {
-  width: 800px;
+  width: 60%;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
 }
 nav {
   text-align: right;
@@ -166,6 +171,11 @@ header {
 header img {
   width: 35%;
 }
+@media (max-width: 500px) {
+  header img {
+    width: 100%;
+  }
+}
 header h1 {
   font-size: 300%;
 }
@@ -173,6 +183,11 @@ header p {
   font-size: 120%;
   line-height: 1.2;
   padding: 2% 0;
+}
+@media (max-width: 500px) {
+  header .button-holder {
+    text-align: center;
+  }
 }
 #about {
   padding: 3% 0;
@@ -199,6 +214,15 @@ header p {
 }
 #about ul li:last-child {
   border-bottom: none;
+}
+@media (max-width: 500px) {
+  #about {
+    flex-direction: column;
+  }
+  #about div {
+    width: 100%;
+    margin-bottom: 2%;
+  }
 }
 #portfolio {
   padding: 5% 0;
@@ -253,6 +277,15 @@ header p {
 }
 #contact .name-email div {
   width: 48%;
+}
+@media (max-width: 500px) {
+  #contact .name-email {
+    flex-direction: column;
+  }
+  #contact .name-email div {
+    width: 100%;
+    padding-bottom: 2%;
+  }
 }
 #contact .message {
   display: flex;
