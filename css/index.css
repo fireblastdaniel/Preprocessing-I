@@ -1,1 +1,304 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Roboto', 'sans-serif';
+}
+button {
+  background-color: #455A64;
+  padding: 2%;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+}
+nav {
+  text-align: right;
+  padding: 2% 0;
+}
+nav div {
+  max-width: 100%;
+}
+nav a {
+  padding-left: 2%;
+  text-decoration: none;
+  color: black;
+}
+header {
+  padding: 5% 2%;
+  background-color: #e7e7e7;
+  border-radius: 8px;
+}
+header img {
+  width: 35%;
+}
+@media (max-width: 500px) {
+  header img {
+    width: 100%;
+  }
+}
+header h1 {
+  font-size: 300%;
+}
+header p {
+  font-size: 120%;
+  line-height: 1.2;
+  padding: 2% 0;
+}
+@media (max-width: 500px) {
+  header .button-holder {
+    text-align: center;
+  }
+}
+#about {
+  padding: 3% 0;
+  display: flex;
+  justify-content: space-between;
+}
+#about h2 {
+  font-size: 200%;
+  padding-bottom: 2%;
+}
+#about p {
+  line-height: 1.5;
+}
+#about div {
+  width: 47%;
+}
+#about ul {
+  border: 1px solid black;
+  border-radius: 4px;
+}
+#about ul li {
+  padding: 3%;
+  border-bottom: 1px solid black;
+}
+#about ul li:last-child {
+  border-bottom: none;
+}
+@media (max-width: 500px) {
+  #about {
+    flex-direction: column;
+  }
+  #about div {
+    width: 100%;
+    margin-bottom: 2%;
+  }
+}
+#portfolio {
+  padding: 5% 0;
+  text-align: center;
+  background-color: #e7e7e7;
+  border-radius: 8px;
+}
+#portfolio h2 {
+  font-size: 200%;
+}
+#portfolio p {
+  padding: 2%;
+}
+#work-history {
+  padding: 5% 0;
+}
+#work-history h2 {
+  font-size: 200%;
+  padding-bottom: 2%;
+}
+#work-history table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#work-history table td,
+#work-history table th {
+  border: 1px solid #ddd;
+  padding: 1%;
+}
+#work-history table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+#work-history table tr:hover {
+  background-color: #ddd;
+}
+#work-history table th {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: left;
+  background-color: #455A64;
+  color: white;
+}
+#contact {
+  padding: 5%;
+  background-color: #e7e7e7;
+  border-radius: 8px;
+}
+#contact .name-email {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+#contact .name-email div {
+  width: 48%;
+}
+@media (max-width: 500px) {
+  #contact .name-email {
+    flex-direction: column;
+  }
+  #contact .name-email div {
+    width: 100%;
+    padding-bottom: 2%;
+  }
+}
+#contact .message {
+  display: flex;
+  flex-direction: column;
+}
+#contact h2 {
+  font-size: 200%;
+}
+#contact input[type=text] {
+  width: 80%;
+  padding-right: 3%;
+}
+#contact textarea {
+  width: 100%;
+  height: 300px;
+}
